@@ -22,22 +22,21 @@ void loop() {
   Serial.print(",");
   Serial.print(sensorValue);
   Serial.println(";");
- 
 
-  delay(250);
-  if (sensorValue > 876,6) {
-     i = i + 1;
+
+  delay(100);
+  if (sensorValue > 988) {
+    i = i + 1;
     sensorValue = analogRead(sensorPin);
     digitalWrite(7, HIGH);
-    
     Serial.print(i);
-      Serial.print(",");
-  Serial.print("bomba activa");
-  Serial.println(";");
-  delay(250);
+    Serial.print(",");
+    Serial.print("bomba activa");
+    Serial.println(";");
+    delay(100);
   }
   else {
     digitalWrite(7, LOW);
   }
   i = i + 1;
-} 
+}

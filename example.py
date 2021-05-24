@@ -8,4 +8,4 @@ serialToExcel.setColumns(["Nro Lectura","Valor"])
 serialToExcel.setRecordsNumber(1000)
 serialToExcel.readPort()
 
-serialToExcel.writeFile("archivo4.xls")
+serialToExcel.writeFile("prueba.xls")
